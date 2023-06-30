@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="formu.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <div id="contenido">
+        <form onsubmit="return validarFormulario()" id="f_registro">
+            <h1>¡Registrate!</h1>
+            <p><label for="f_email"><h3>Correo Electronico</h3></label></p>
+            <input type="text" id="correo">
+            <span id="errorCorreo" class="error"></span>
+            <label for="f_pass"><h3>Contraseña</h3></label>
+            <input type="password" id="password">
+            <span id="errorPass" class="error"></span>
+            <p><label for="f_confirmar"><h3>Confirmar Contraseña</h3></label></p>
+            <input type="password" id="confirmar">
+            <span id="errorConfirmar" class="error"></span>
+            <p><button type="submit">Registrarse</button></p>
+            <div id="errorContainer"></div>
+
+        </form>
+    </div>
+</body>
+</html>
